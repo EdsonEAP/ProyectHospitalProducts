@@ -69,13 +69,13 @@ class _HomeViewState extends State<HomeView> {
                       size,
                       "REGISTRO PRODUCTO",
                       Icons.date_range,
-                      "assets/icon/registro.jpg",
+                      "assets/icon/images.jpeg",
                       () {
                         Navigator.pushNamed(context, ProductsView.name);
                       },
                     ),
                     cardHome(size, "REGISTRO MASIVO", Icons.search,
-                        "assets/icon/excel.jpg", () {
+                        "assets/icon/excel.jpeg", () {
                       Navigator.pushNamed(context, FilView.name);
                     })
                   ],
@@ -83,11 +83,11 @@ class _HomeViewState extends State<HomeView> {
                 Row(
                   children: [
                     cardHome(size, "REGISTRAR SALIDA ", Icons.calendar_today,
-                        "assets/icon/registroProducto.jpg", () {
+                        "assets/icon/registroUnico.jpeg", () {
                       Navigator.pushNamed(context, ProductsSalidaView.name);
                     }),
                     cardHome(size, "PRODUCTOS DISPONIBLES",
-                        Icons.calendar_today, "assets/icon/disponible.jpg", () {
+                        Icons.calendar_today, "assets/icon/disponible.png", () {
                       Navigator.pushNamed(context, ListadoProductsView.name);
                     }),
                   ],
