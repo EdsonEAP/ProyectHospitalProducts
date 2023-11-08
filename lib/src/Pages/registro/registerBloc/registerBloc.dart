@@ -32,7 +32,7 @@ class RegisterBloc with Alerts {
       String? first_name,
       String? second_name,
       String? type_document,
-      String? terms,
+      //String? terms,
       String? gender,
       String? password,
       String? fecha_nacimiento}) async {
@@ -48,7 +48,7 @@ class RegisterBloc with Alerts {
         first_name: first_name ?? "",
         second_name: second_name ?? "",
         type_document: type_document ?? "",
-        terms: terms ?? "",
+        // terms: terms ?? "",
         gender: gender ?? "",
         email: email ?? "");
 

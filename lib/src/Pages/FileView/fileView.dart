@@ -87,7 +87,7 @@ class _HomeViewState extends State<FilView> {
                     padding: EdgeInsets.all(30),
                     child: Center(
                       child: Text(
-                        "RECORDAR QUE DEBE DE SEGUIR LA ESTRUCTURA DEL EXCEL BRINDADO, DE LO CONTRARIO NO SE SUBIRÁ LA INFORMACIÓN",
+                        "Recordar que debe de seguir la estructura del excel brindado, de lo contrario no se subirá la información.",
                         style: TextStyle(color: Colors.black, fontSize: 22),
                       ),
                     ),

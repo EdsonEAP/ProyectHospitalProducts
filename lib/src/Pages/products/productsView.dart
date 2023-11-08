@@ -36,12 +36,16 @@ class _ProductsViewState extends State<ProductsView> {
 
   @override
   void initState() {
+    inicio();
     super.initState();
+  }
+
+  void inicio() async {
+    usuarioRegisterController.text = prefs.user;
   }
 
   @override
   Widget build(BuildContext context) {
-    usuarioRegisterController.text = prefs.user;
     final size = MediaQuery.of(context).size;
     return Scaffold(
       key: _scaffoldKey,

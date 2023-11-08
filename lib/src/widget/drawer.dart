@@ -62,7 +62,7 @@ class DrawerGeneral {
         ),
         ListTile(
           leading: Icon(
-            Icons.date_range, // Icono de una casa
+            Icons.add, // Icono de una casa
             color: Colors.black, // Color del icono
           ),
           title: Text(
@@ -79,7 +79,7 @@ class DrawerGeneral {
         ),
         ListTile(
           leading: Icon(
-            Icons.search, // Icono de una casa
+            Icons.cloud_download, //, Icono de una casa
             color: Colors.black, // Color del icono
           ),
           title: Text(
@@ -96,11 +96,11 @@ class DrawerGeneral {
         ),
         ListTile(
           leading: Icon(
-            Icons.event, // Icono de una casa
+            Icons.list, // Icono de una casa
             color: Colors.black, // Color del icono
           ),
           title: Text(
-            'LISTADO PRODUCTOS',
+            'PRODUCTOS DISPONIBLE',
             style: TextStyle(
               color: Colors.black, // Color del texto
               fontWeight: FontWeight.bold, // Texto en negrita
@@ -113,7 +113,7 @@ class DrawerGeneral {
         ),
         ListTile(
           leading: Icon(
-            Icons.location_on, // Icono de una casa
+            Icons.exit_to_app, // Icono de una casa
             color: Colors.black, // Color del icono
           ),
           title: Text(

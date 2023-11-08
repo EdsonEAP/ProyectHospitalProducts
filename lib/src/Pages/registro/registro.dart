@@ -251,66 +251,66 @@ class _RegistroViewState extends State<RegistroView> with Alerts {
                     seleccione: "Contraseña",
                     oculto: true,
                     controlador: passController),
-                WidgetsRepetidos().inputLogin(
-                    active: true,
-                    seleccione: "Repetir contraseña",
-                    oculto: true,
-                    controlador: repeatpassController),
+                // WidgetsRepetidos().inputLogin(
+                //     active: true,
+                //     seleccione: "Repetir contraseña",
+                //     oculto: true,
+                //     controlador: repeatpassController),
                 SizedBox(height: size.height * 0.01),
-                Container(
-                  child: Center(
-                    child: RichText(
-                      text: TextSpan(
-                        text: "Leer terminos y condiciones:  ",
-                        style: TextStyle(
-                          color: General.grissApp,
-                          fontSize: 12,
-                        ),
-                        children: [
-                          TextSpan(
-                            text: "Aquí",
-                            style: TextStyle(
-                              color: Colors.red,
-                              fontSize: 12,
-                              decoration: TextDecoration.underline,
-                            ),
-                            recognizer: TapGestureRecognizer()
-                              ..onTap = () {
-                                // Navigator.push(
-                                //   context,
-                                //   MaterialPageRoute(
-                                //     builder: (context) => TerminosRegister(),
-                                //   ),
-                                // );
-                              },
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Flexible(
-                        child: Text(
-                      "Acepto los términos y condiciones de uso",
-                      style: TextStyle(
-                          color: General.grissApp,
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold),
-                    )),
-                    Checkbox(
-                      activeColor: General.colorApp,
-                      value: valueTerminosYCondiciones,
-                      onChanged: (value) {
-                        setState(() {
-                          valueTerminosYCondiciones = value!;
-                        });
-                      },
-                    )
-                  ],
-                ),
+                // Container(
+                //   child: Center(
+                //     child: RichText(
+                //       text: TextSpan(
+                //         text: "Leer terminos y condiciones:  ",
+                //         style: TextStyle(
+                //           color: General.grissApp,
+                //           fontSize: 12,
+                //         ),
+                //         children: [
+                //           TextSpan(
+                //             text: "Aquí",
+                //             style: TextStyle(
+                //               color: Colors.red,
+                //               fontSize: 12,
+                //               decoration: TextDecoration.underline,
+                //             ),
+                //             recognizer: TapGestureRecognizer()
+                //               ..onTap = () {
+                //                 // Navigator.push(
+                //                 //   context,
+                //                 //   MaterialPageRoute(
+                //                 //     builder: (context) => TerminosRegister(),
+                //                 //   ),
+                //                 // );
+                //               },
+                //           ),
+                //         ],
+                //       ),
+                //     ),
+                //   ),
+                // ),
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.center,
+                //   children: [
+                //     Flexible(
+                //         child: Text(
+                //       "Acepto los términos y condiciones de uso",
+                //       style: TextStyle(
+                //           color: General.grissApp,
+                //           fontSize: 12,
+                //           fontWeight: FontWeight.bold),
+                //     )),
+                //     Checkbox(
+                //       activeColor: Colors.black,
+                //       value: valueTerminosYCondiciones,
+                //       onChanged: (value) {
+                //         setState(() {
+                //           valueTerminosYCondiciones = value!;
+                //         });
+                //       },
+                //     )
+                //   ],
+                // ),
                 SizedBox(
                   height: 20,
                 ),
@@ -399,24 +399,26 @@ streamBotonReactive(context) {
               }
             else
               {
-                registerBloc.requestRegister(context,
-                    fecha_nacimiento: yearNacimientoController.text +
-                        "-" +
-                        mes! +
-                        "-" +
-                        diaNacimientoController.text,
-                    type_document: dni,
-                    document: documentoController.text,
-                    first_name: primerNombreController.text,
-                    second_name: segundoNombreController.text,
-                    surnames: apellidoController.text,
-                    gender: sexo,
-                    age: edadController.text,
-                    email: emailController.text,
-                    phone: celularController.text,
-                    address: direccionController.text,
-                    password: passController.text,
-                    terms: valueTerminosYCondiciones ? "1" : '0')
+                registerBloc.requestRegister(
+                  context,
+                  fecha_nacimiento: yearNacimientoController.text +
+                      "-" +
+                      mes! +
+                      "-" +
+                      diaNacimientoController.text,
+                  type_document: dni,
+                  document: documentoController.text,
+                  first_name: primerNombreController.text,
+                  second_name: segundoNombreController.text,
+                  surnames: apellidoController.text,
+                  gender: sexo,
+                  age: edadController.text,
+                  email: emailController.text,
+                  phone: celularController.text,
+                  address: direccionController.text,
+                  password: passController.text,
+                )
+                //terms: valueTerminosYCondiciones ? "1" : '0')
               }
           },
           child: Container(

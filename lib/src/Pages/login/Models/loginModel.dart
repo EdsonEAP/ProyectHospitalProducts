@@ -7,7 +7,7 @@ class LoginM {
   String? surnames;
   String? email;
   String? phone;
-  Null? fechaNacimiento;
+  String? fechaNacimiento;
   String? age;
   String? address;
   String? gender;

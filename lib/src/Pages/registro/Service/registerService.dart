@@ -11,7 +11,6 @@ class RegisterService {
       required String first_name,
       required String second_name,
       required String type_document,
-      required String terms,
       required String gender,
       required String fecha_nacimiento,
       required String password}) async {
@@ -25,7 +24,6 @@ class RegisterService {
       "phone": phone,
       "age": age,
       "address": address,
-      "terms": terms,
       "type_document": type_document,
       "fecha_nacimiento": fecha_nacimiento,
       "password": password
